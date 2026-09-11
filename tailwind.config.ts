@@ -19,13 +19,5 @@ const config: Config = {
     },
   },
   plugins: [],
-  // Ensure Tailwind is watching for class changes
-  safelist: [
-    'text-primary-red',
-    'bg-primary-red',
-    'bg-primary-blue',
-    'hover:bg-red-700',
-    'hover:text-primary-red',
-  ],
 };
 export default config;
