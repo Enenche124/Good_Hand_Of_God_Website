@@ -9,6 +9,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "The Good Hand of God International Gospel Ministry Centre",
   description: "Spreading the gospel and transforming lives through the power of God",
+  icons: {
+    icon: "/images/Good_hand_img.png",
+    apple: "/images/Good_hand_img.png",
+  },
 };
 
 export default function RootLayout({

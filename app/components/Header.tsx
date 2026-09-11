@@ -12,8 +12,12 @@ export default function Header() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-primary-red rounded-full flex items-center justify-center">
-              <span className="text-white text-2xl">✋</span>
+            <div className="w-12 h-12 flex-shrink-0">
+              <img
+                src="/images/Good_hand_img.png"
+                alt="The Good Hand of God Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
               <h1 className="text-xl font-bold text-primary-red">
@@ -78,7 +82,10 @@ export default function Header() {
             <li>
               <Link
                 href="/give"
-                className="bg-primary-red text-white px-6 py-2 rounded-full hover:bg-red-700 transition"
+                className="text-white px-6 py-2 rounded-full transition"
+                style={{ backgroundColor: '#DC2626' }}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#b91c1c'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#DC2626'}
               >
                 Give
               </Link>
@@ -175,7 +182,8 @@ export default function Header() {
             <li>
               <Link
                 href="/give"
-                className="block bg-primary-red text-white px-6 py-2 rounded-full hover:bg-red-700 transition text-center"
+                className="block text-white px-6 py-2 rounded-full transition text-center"
+                style={{ backgroundColor: '#DC2626' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Give

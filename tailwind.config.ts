@@ -11,12 +11,21 @@ const config: Config = {
       colors: {
         primary: {
           red: "#DC2626",
-          blue: "#2563EB", 
+          blue: "#1e3a8a",
+          gold: "#fbbf24",
           white: "#FFFFFF",
         },
       },
     },
   },
   plugins: [],
+  // Ensure Tailwind is watching for class changes
+  safelist: [
+    'text-primary-red',
+    'bg-primary-red',
+    'bg-primary-blue',
+    'hover:bg-red-700',
+    'hover:text-primary-red',
+  ],
 };
 export default config;
